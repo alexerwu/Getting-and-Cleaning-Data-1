@@ -1,9 +1,4 @@
 ##########################################################################################################
-
-## Coursera Getting and Cleaning Data Course Project
-## Tripti Mahakul
-## 2015-06-20
-
 # run_analysis.r File Description:
 
 # This script will perform the following steps on the UCI HAR Dataset downloaded from 
@@ -38,7 +33,7 @@ colnames(subjectTrain)  = "subjectId";
 colnames(xTrain)        = features[,2]; 
 colnames(yTrain)        = "activityId";
 
-# cCreate the final training set by merging yTrain, subjectTrain, and xTrain
+# Create the final training set by merging yTrain, subjectTrain, and xTrain
 trainingData = cbind(yTrain,subjectTrain,xTrain);
 
 # Read in the test data
